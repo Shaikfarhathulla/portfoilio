@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+body{
+    background-color: black;
+    /* background-color: #121212; */
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Keyframes and animations */
+@keyframes fade-in-down {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fade-in-up {
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fade-in-right {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+@keyframes fade-in-left {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-50px);
+    }
+}
+@keyframes fade-out {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* @keyframes jump-button {
+    from{
+        transform: translateY(-3px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+} */
+.reveal{
+    transform: translateY(120px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.reveal-fade{
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.reveal-fade.active-fade{
+    opacity: 1;
+}
+.reveal-right{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease;
+}
+.reveal-right.active-right{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.reveal-left{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease;
+}
+.reveal-left.active-left{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* Keyframe and animations ends*/
+
+
+
+/* Header Start */
+
+header{
+    padding: 0px 0px 20px 0px;
+    position: fixed;
+    z-index: 111;
+    width: 100%;
+    
+}
+header nav{
+    width: 70.7%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191919;
+    backdrop-filter: blur(20px);
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid #282828;
+    animation: fade-in-down 1s forwards;
+}
+#nav-up{
+    padding-top: 20px;
+    background: black;
+}
+#logo{
+    padding: 0px 15px;
+}
+#logo a{
+    font-size: 15px;
+    font-weight: 400;
+}
+.navlinks ul{
+    display: flex;
+    gap: 60px;
+}
+.navlinks ul li{
+    list-style: none;
+}
+#chatbutton{
+    background-color: #282828;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+#chatbutton a{
+    display: block;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+#chatbutton:hover{
+    /* animation: jump-button 2s linear; */
+    /* transform: translateY(-3px); */
+    background-color: whitesmoke;
+}
+#chatbutton:hover a{
+    color: black;
+
+}
+
+/* Header Ends */
+
+
+
+/* Main section start */
+
+#up-showcase{
+    padding: 130px 0px 40px 0px;
+}
+#showcase{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #191919;
+    border-radius: 10px;
+    border: 1px solid #282828;
+    animation: fade-in-up 1s forwards;
+}
+#down-showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 30px 20px 30px;
+    gap: 45px;
+}
+#jobtitle h4{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    border-bottom: 2px solid #282828;
+    opacity: 0;
+    animation: fade-in-right 1s ease-in-out 400ms forwards;
+}
+#intro h1{
+    font-size: 45px;
+    font-weight: 400;
+    background-color: rgb(66, 66, 66);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.9233193277310925) 40%, rgb(46, 46, 46) 95%);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    /* opacity: 0;
+    animation: fade-in-right 1s ease-in-out 1s forwards; */
+}
+#intro h6{
+    font-size: 15px;
+    font-weight: 400;
+    width: 550px;
+    color: rgb(160,160,160);
+    /* opacity: 0;
+    animation: fade-in-right 1s ease-in-out 1.5s forwards; */
+}
+.icons{
+    display: flex;
+    padding: 0px 30px;
+    gap: 20px;
+}
+.icons > div{
+    padding: 10px 15px;
+    border: 1px solid #282828;
+    border-radius: 5px;
+    font-size: 20px;
+    opacity: 0;
+    animation: fade-in-right 1s ease-in-out 400ms forwards;
+    
+}
+.icons div:nth-child(1) a:hover{
+    color: royalblue;
+    transition: 0.3s;
+}
+.icons div:nth-child(2) a:hover{
+    color: forestgreen;
+    transition: 0.3s;
+}
+.icons div:nth-child(3) a:hover{
+    color: hsl(348.66,75.23%,57.25%);
+    transition: 0.3s;
+}
+.icons div:nth-child(4) a:hover{
+    color: rgb(29,155,240);
+    transition: 0.3s;
+}
+#photo{
+    display: block;
+    margin: auto 0px;
+    overflow: hidden;
+}
+#photo > div{
+    padding-right: 50px;
+}
+#photo img{
+    mix-blend-mode: lighten;  /* Uses to blend the img background and division background */
+    text-align: center;
+    opacity: 0;
+    animation: fade-out 1s ease-in-out 400ms forwards;
+}
+
+/* Main Section Ends */
+
+
+
+/* experience Section */
+.up-exp{
+    padding: 40px 0px;
+}
+.experience{
+    width: 70%;
+    padding: 20px 10px;
+    margin: auto;
+    background-color: #191919;
+    border-radius: 10px;
+    border: 1px solid #282828;
+    overflow: hidden;
+}
+.section-title h1{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 45px;
+    background-color: rgb(66, 66, 66);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.9233193277310925) 40%, rgb(46, 46, 46) 95%);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.exp-detail{
+    display: flex;
+    padding: 20px 10px;
+}
+.company-name{
+    padding: 20px 15px;
+    border-right: 2px solid #282828;
+}
+.company-name h1{
+    font-size: 20px;
+    font-weight: 400;
+    width: 325px;
+}
+.company-name p{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(175, 175, 175);
+    /* padding-top: 5px; */
+}
+.job-des{
+    padding: 20px 20px;
+    color: rgb(175, 175, 175);
+}
+.job-des p{
+    padding-bottom: 15px;
+}
+.job-des a{
+    background-color: whitesmoke;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.job-des a i{
+    rotate: 45deg;
+    transition: 0.5s;
+}
+.job-des a:hover i{
+    rotate: 90deg;
+}
+/* experience section ends*/
+
+
+
+/* Education */
+
+.job-des h5{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Education section ends */
+
+
+
+/* Skill Section */
+
+#skill-sec{
+    padding: 40px 0px 20px 0px;
+}
+#skill-main{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #282828;
+    background-color: #191919;
+    border-radius: 10px;
+}
+#slide-skills{
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}
+#slide-skills h1{
+    display: inline-block;
+    padding: 30px 20px;
+    font-weight: 300;
+    color: rgb(175, 175, 175);
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0%); /* Start scrolling from the right edge */
+    }
+    100% {
+        transform: translateX(-100.0%); /* Scroll to the left edge */
+    }
+}
+
+/* Skills sections end */
+
+
+
+/* Project Section Start */
+
+#project-div{
+    width: 70%;
+    padding: 20px 0px;
+    margin: auto;
+    
+}
+#all-projects{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+.project-des{
+    width: 24%;
+    background-color: #191919da;
+    border-radius: 10px;
+    border: 1px solid #282828;
+    padding: 20px 22px 30px 25px;
+}
+.project-des:hover{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #43434395, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #43434395, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.project-des i{
+    font-size: 35px;
+    padding: 20px 8px;
+    color: rgb(175, 175, 175);
+}
+.project-des h5{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 10px 0px;
+}
+.project-des p{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 23px;
+    text-align: justify;
+    color: rgb(175, 175, 175);
+}
+.project-des > div{
+    transition: 0.5s;
+}
+
+.project-des:hover > div{
+    transform: translateY(-10px);
+    
+}
+#project-button{
+    width: max-content;
+    margin: auto;
+    padding: 25px 0px;
+    padding-bottom: 35px;
+    transition: 0.7s;
+}
+#project-button a{
+    padding: 15px 20px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+#project-button:hover{
+    transform: translateY(-3px);
+}
+
+/* Project Section ends */
+
+
+
+/* Internship section starts */
+
+#internships{
+    margin: auto;
+    padding: 20px 5px;
+}
+#all-intern{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 5px;
+    height: 600px;
+}
+.single-intern{
+    display: flex;
+    width: 50%;
+    padding: 30px 10px;
+    background-color: #191919;
+    border-radius: 10px;
+    border: 1px solid #282828;
+    overflow: hidden;
+}
+.intern-des{
+    line-height: 25px;
+    padding: 10px;
+}
+.intern-des h1{
+    font-size: 20px;
+    font-weight: 300;
+}
+.intern-des h2{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.intern-des p{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    color: rgb(175, 175, 175);
+}
+.intern-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+.img-div-in{
+    width: 250px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 7px;
+}
+.img-div-in:hover img{
+    transform: scale(1.07);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-div-in img{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    transition: 0.5s ease;
+}
+
+/* Internship section ends */
+
+
+
+/* footer section starts */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-all{
+    width: 60%;
+}
+#footer-letstalk{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+#footer-letstalk h1{
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    padding: 0px 0px 15px 0px;
+}
+#footer-letstalk > div{
+    letter-spacing: 2px;
+    width: max-content;
+}
+#footer-name{
+    padding: 135px 0px 0px 0px;
+}
+#footer-name h1{
+    margin-top: 100px;
+    font-weight: 200;
+    font-size: 35px;
+    border-top: 2px solid #282828;
+    text-align: center;
+    width: 420px;
+    margin: auto;
+}
+#footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px 25px 0px;
+}
+#footer-icons > div{
+    border: none;
+    font-size: 25px;
+}
+#footer-copy{
+    text-align: center;
+    font-size: 8px;
+    padding: 20px 0px 70px 0px;
+}
+#footer-copy h1{
+    font-weight: 200;
+    color: rgb(175, 175, 175);
+}
+
+/* footer section ends */

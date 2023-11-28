@@ -1,0 +1,132 @@
+#showcase{
+    background-color: black;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#showcase2{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 10px 10px;
+    background-color: black;
+    border-radius: 10px;
+    gap: 10px;
+    border: 1px solid #282828;
+    animation: fade-in-up 1s forwards;
+}
+#about-des{
+    flex: 0.40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #191919;
+    border: 1px solid #282828;
+    border-radius: 5px;
+    padding: 30px 20px 30px 20px;
+    line-height: 25px;
+}
+#about-des h1{
+    font-size: 18px;
+    font-weight: 400;
+}
+#about-des span{
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(160,160,160);
+}
+#about-des h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(160,160,160);
+}
+#about-des h3:nth-child(4){
+    margin-bottom: 25px;
+}
+#dn-resume a{
+    border: 0px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+}
+.skillset-div{
+    flex: 0.60;
+    border: 1px solid #282828;
+    border-radius: 5px;
+    padding: 20px 30px;
+    background-color: #191919;
+}
+.skillset-div h1{
+    font-size: 18px;
+    font-weight: 400;
+}
+.skillset-div ul{
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skillset-div li{
+    list-style: none;
+    border: 1px solid #282828;
+    padding: 5px;
+    padding-right: 20px;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 15px;
+    color: rgb(160,160,160);
+}
+.logo{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+    object-fit: cover;
+    mix-blend-mode: color-dodge;
+}
+.logo2{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+    padding: 0px 90px;
+}
+@keyframes fade-out {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.icons > div{
+    animation: fade-out 1s ease-in-out 400ms forwards;
+}
+.skillset-div ul li{
+    animation: fade-out 2s ease-in-out forwards;
+}
+.icons i{
+    font-size: 25px;
+}
