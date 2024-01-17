@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/1aa6db6ab0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div id="nav-up">
-            
+
         </div>
         <nav>
             <div>
@@ -41,7 +45,29 @@
                     <a href="letschat.html">Lets Chat</a>
                 </div>
             </div>
+            <span id="sideMenu" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sideLinks">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div id="sideChat">
+                    <a href="letschat.html">Lets Chat</a>
+                </div>
+            </div>
+        </div>
     </header>
     <section>
         <div id="up-showcase">
@@ -54,19 +80,8 @@
                         <h3>Btech | 2019 - 2023</h3>
                     </div>
                     <div id="dn-resume">
-                        <!-- <div>
-                            <a href="https://www.linkedin.com/in/shaik-farhathulla-java-fullstack-developer/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                        <div>
-                            <a href="https://github.com/Shaikfarhathulla" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/shaik_farhath93/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <div>
-                            <a href="https://twitter.com/_shaikfarhath" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        </div> -->
-                        <a href="images/shaik farhathulla_resume.pdf" download="shaik farhathulla_resume.pdf">Download Resume<i class="fa-solid fa-download" style="margin-left: 5px;"></i></a>
+                        <a href="images/Shaik Farhathulla_resume2.pdf" download="shaik farhathulla_resume.pdf">Download
+                            Resume<i class="fa-solid fa-download" style="margin-left: 5px;"></i></a>
                     </div>
                 </div>
                 <div class="skillset-div">
@@ -88,16 +103,20 @@
                 <div id="about-des">
                     <div class="icons">
                         <div>
-                            <a href="https://www.linkedin.com/in/shaik-farhathulla-java-fullstack-developer/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/in/shaik-farhathulla-java-fullstack-developer/"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                         <div>
-                            <a href="https://github.com/Shaikfarhathulla" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/Shaikfarhathulla" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
                         </div>
                         <div>
-                            <a href="https://www.instagram.com/shaik_farhath93/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/shaik_farhath93/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </div>
                         <div>
-                            <a href="https://twitter.com/_shaikfarhath" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://twitter.com/_shaikfarhath" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -118,5 +137,16 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
+
 </html>

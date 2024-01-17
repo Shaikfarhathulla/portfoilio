@@ -1,47 +1,55 @@
-*{
+* {
     color: white;
 }
-section{
+
+section {
     padding: 150px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-section > div{
+
+section>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
 }
-#contact{
+
+#contact {
     text-align: center;
 }
-#contact p{
+
+#contact p {
     border-top: 2px solid #282828;
     padding: 10px 70px 20px 70px;
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 2px;
 }
-#contact h1{
+
+#contact h1 {
     padding: 30px 10px 10px 10px;
     font-size: 35px;
     font-weight: 400;
     letter-spacing: 1px;
 }
-#form-div{
+
+#form-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 65%;
 }
-form{
+
+form {
     width: 65%;
     display: flex;
     flex-direction: column;
     margin: auto;
 }
-#form-div input{
+
+#form-div input {
     display: block;
     margin: auto;
     width: 95%;
@@ -51,7 +59,8 @@ form{
     border-radius: 5px;
     background-color: #282828;
 }
-#form-div textarea{
+
+#form-div textarea {
     display: block;
     margin: auto;
     width: 95%;
@@ -63,7 +72,8 @@ form{
     background-color: #282828;
 
 }
-#form-div button{
+
+#form-div button {
     display: block;
     margin: auto;
     width: 100%;
@@ -72,11 +82,52 @@ form{
     border: 1px solid #282828;
     border-radius: 5px;
     background-color: #282828;
-    transition:0.7s;
-    
+    transition: 0.7s;
+
 }
-#form-div button:hover{
+
+#form-div button:hover {
     background-color: white;
     cursor: pointer;
     color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    section {
+        padding: 75px 0px;
+    }
+
+    section>div {
+        width: 85%;
+    }
+
+    form {
+        width: 85%;
+    }
+
+    #form-div {
+        width: 100%;
+    }
+
+    #form-div input {
+        width: 93%;
+    }
+
+    #form-div textarea {
+        width: 93%;
+    }
+
+    #footer-name {
+        padding: 0px;
+    }
+
+    #footer-icons {
+        padding: 25px 0px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #sideMenu {
+        display: none;
+    }
 }

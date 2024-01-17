@@ -1,15 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
 }
-body{
+
+body {
     background-color: black;
     /* background-color: #121212; */
     color: white;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
@@ -17,14 +19,15 @@ a{
 
 /* Header Start */
 
-header{
+header {
     padding: 0px 0px 20px 0px;
     position: fixed;
     z-index: 111;
     width: 100%;
-    
+
 }
-header nav{
+
+header nav {
     width: 70.7%;
     margin: auto;
     padding: 10px;
@@ -38,60 +41,104 @@ header nav{
     border: 1px solid #282828;
     animation: fade-in-down 1s forwards;
 }
-#nav-up{
+
+#nav-up {
     padding-top: 20px;
     background: black;
 }
-#logo{
+
+#logo {
     padding: 0px 15px;
 }
-#logo a{
+
+#logo a {
     font-size: 15px;
     font-weight: 400;
 }
-.navlinks ul{
+
+.navlinks ul {
     display: flex;
     gap: 60px;
 }
-.navlinks ul li{
+
+.navlinks ul li {
     list-style: none;
 }
-#chatbutton{
+
+#chatbutton {
     background-color: #282828;
     border-radius: 8px;
     font-size: 15px;
     transition: 0.5s;
 }
-#chatbutton a{
+
+#chatbutton a {
     display: block;
     padding: 10px 20px;
     letter-spacing: 1px;
     transition: 0.5s;
 }
-#chatbutton:hover{
+
+#chatbutton:hover {
     /* animation: jump-button 2s linear; */
     /* transform: translateY(-3px); */
     background-color: whitesmoke;
 }
-#chatbutton:hover a{
+
+#chatbutton:hover a {
     color: black;
 
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 /* Header Ends */
 
 
-.up-exp{
+.up-exp {
     padding: 100px 0px 40px 0px;
 }
-.section-title h1{
+
+.section-title h1 {
     text-align: center;
     font-weight: 400;
     letter-spacing: 2px;
     font-size: 45px;
     background-color: rgb(66, 66, 66);
-    background-image: linear-gradient(180deg, rgba(255,255,255,0.9233193277310925) 40%, rgb(46, 46, 46) 95%);
-  
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9233193277310925) 40%, rgb(46, 46, 46) 95%);
+
     /* Set the background size and repeat properties. */
     background-size: 100%;
     background-repeat: repeat;
@@ -100,96 +147,113 @@ header nav{
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-#project-div{
+
+#project-div {
     width: 70%;
     padding: 20px 0px;
     margin: auto;
-    
+
 }
-#all-projects{
+
+#all-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 30px 0px;
     gap: 40px 0px;
 }
-.project-des{
+
+.project-des {
     width: 24%;
     background-color: #191919da;
     border-radius: 10px;
     border: 1px solid #282828;
     padding: 20px 22px 30px 25px;
 }
-.project-des:hover{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #43434395, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #43434395, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.project-des:hover {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #43434395, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #43434395, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.project-des i{
+
+.project-des i {
     font-size: 35px;
     padding: 20px 8px;
     color: rgb(175, 175, 175);
 }
-.project-des h5{
+
+.project-des h5 {
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
     padding: 10px 0px;
 }
-.project-des p{
+
+.project-des p {
     font-size: 13px;
     font-weight: 300;
     line-height: 23px;
     text-align: justify;
     color: rgb(175, 175, 175);
 }
-.project-des > div{
+
+.project-des>div {
     transition: 0.5s;
 }
 
-.project-des:hover > div{
+.project-des:hover>div {
     transform: translateY(-10px);
-    
+
 }
 
 
 /* footer section starts */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.footer-all{
+
+.footer-all {
     width: 60%;
 }
-#footer-letstalk{
+
+#footer-letstalk {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
 }
-#footer-letstalk h1{
+
+#footer-letstalk h1 {
     font-weight: 400;
     font-size: 40px;
     letter-spacing: 2px;
     word-spacing: 3px;
     padding: 0px 0px 15px 0px;
 }
-#footer-letstalk > div{
+
+#footer-letstalk>div {
     letter-spacing: 2px;
     width: max-content;
 }
-#footer-name{
+
+#footer-name {
     padding: 135px 0px 0px 0px;
 }
-#footer-name h1{
+
+#footer-name h1 {
     margin-top: 100px;
     font-weight: 200;
     font-size: 35px;
@@ -198,39 +262,118 @@ footer{
     width: 420px;
     margin: auto;
 }
-.icons div:nth-child(1) a:hover{
+
+.icons div:nth-child(1) a:hover {
     color: royalblue;
     transition: 0.3s;
 }
-.icons div:nth-child(2) a:hover{
+
+.icons div:nth-child(2) a:hover {
     color: forestgreen;
     transition: 0.3s;
 }
-.icons div:nth-child(3) a:hover{
-    color: hsl(348.66,75.23%,57.25%);
+
+.icons div:nth-child(3) a:hover {
+    color: hsl(348.66, 75.23%, 57.25%);
     transition: 0.3s;
 }
-.icons div:nth-child(4) a:hover{
-    color: rgb(29,155,240);
+
+.icons div:nth-child(4) a:hover {
+    color: rgb(29, 155, 240);
     transition: 0.3s;
 }
-#footer-icons{
+
+#footer-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px 0px 25px 0px;
     gap: 50px;
 }
-#footer-icons > div{
+
+#footer-icons>div {
     border: none;
     font-size: 25px;
 }
-#footer-copy{
+
+#footer-copy {
     text-align: center;
     font-size: 8px;
     padding: 20px 0px 70px 0px;
 }
-#footer-copy h1{
+
+#footer-letstalk #chatbutton {
+    display: block;
+}
+
+#footer-copy h1 {
     font-weight: 200;
     color: rgb(175, 175, 175);
+}
+
+@media only screen and (max-width: 800px) {
+    #nav-up {
+        padding-top: 15px;
+    }
+
+    header {
+        position: static;
+        padding-bottom: 15px;
+    }
+
+    header nav {
+        width: 85%;
+        padding: 8px 11px;
+    }
+
+    #logo {
+        padding: 0px;
+    }
+
+    .navlinks,
+    #chatbutton {
+        display: none;
+    }
+
+    .section-title h1 {
+        font-size: 25px;
+    }
+
+    .up-exp {
+        padding: 30px 0px;
+    }
+
+    #project-div {
+        width: 85%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    #all-projects {
+        padding: 15px 0px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project-des {
+        width: auto;
+    }
+
+    #footer-name {
+        padding: 50px 0px 0px 0px;
+    }
+
+    #footer-name h1 {
+        width: auto;
+        font-size: 25px;
+    }
+
+    #footer-letstalk h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #sideMenu {
+        display: none;
+    }
 }
